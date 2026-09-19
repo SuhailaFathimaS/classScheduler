@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Teacher Dashboard — ClassFlow</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/calendar.css"></head>
+<body>
+<nav class="nav container"><a class="brand" href="index.html"><span class="brand-mark">✦</span> ClassFlow</a><div class="nav-links"><a class="active" href="teacher.html">Dashboard</a><a href="calendar.html">Calendar</a><button class="text-btn" id="logoutBtn">Log out</button></div></nav>
+<main class="container dashboard">
+<section class="page-heading"><div><div class="eyebrow">TEACHER DASHBOARD</div><h1 id="teacherGreeting">Your classroom, in one view.</h1><p>Bookings and feedback are pulled directly from your Google Sheet.</p></div><div class="date-chip" id="teacherDate"></div></section>
+<div id="teacherMessage" class="notice hidden"></div>
+<section class="stats-grid">
+<div class="stat-card"><small>TODAY</small><strong id="todayCount">—</strong><span>classes</span></div>
+<div class="stat-card"><small>UPCOMING</small><strong id="upcomingCount">—</strong><span>scheduled</span></div>
+<div class="stat-card"><small>FEEDBACK</small><strong id="feedbackCount">—</strong><span>responses</span></div>
+<div class="stat-card"><small>AVG RATING</small><strong id="avgRating">—</strong><span>out of 5</span></div>
+</section>
+<section class="dashboard-grid teacher-grid">
+<div class="panel"><div class="panel-head"><div><span class="section-kicker">NEXT SESSIONS</span><h2>Upcoming classes</h2></div><button class="icon-btn" id="refreshTeacher">↻</button></div><div id="teacherClasses" class="class-list"></div></div>
+<div class="panel"><div class="panel-head"><div><span class="section-kicker">RECENT VOICES</span><h2>Feedback</h2></div><a class="mini-link" href="feedback.html">Student page →</a></div><div id="teacherFeedback" class="feedback-list"></div></div>
+</section>
+</main>
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/teacher.js"></script>
+</body></html>

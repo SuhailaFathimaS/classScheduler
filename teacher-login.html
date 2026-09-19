@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Teacher Login — ClassFlow</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="auth-page">
+<nav class="nav container"><a class="brand" href="index.html"><span class="brand-mark">✦</span> ClassFlow</a></nav>
+<main class="auth-wrap">
+  <section class="auth-card panel">
+    <div class="auth-logo">✦</div><div class="eyebrow">TEACHER PORTAL</div><h1>Welcome back.</h1><p>Sign in using the teacher account configured in your Google Sheet.</p>
+    <div id="loginMessage" class="notice hidden"></div>
+    <form id="teacherLoginForm">
+      <label>Username<input id="teacherUsername" required autocomplete="username" placeholder="Teacher username"></label>
+      <label>Password<input id="teacherPassword" required type="password" autocomplete="current-password" placeholder="Teacher password"></label>
+      <button class="btn btn-primary btn-full" type="submit" id="loginBtn">Open teacher dashboard <span>→</span></button>
+    </form>
+    <p class="small-note">This is manual authentication backed by Google Sheets. For production-grade security, use a real authentication provider.</p>
+  </section>
+</main>
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/teacher-login.js"></script>
+</body></html>

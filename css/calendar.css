@@ -1,0 +1,2 @@
+/* Calendar-specific polish is kept separate so it is easy to customize. */
+.calendar-event{cursor:default;transition:transform .15s}.calendar-event:hover{transform:translateY(-1px)}

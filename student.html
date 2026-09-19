@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard — ClassFlow</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav container"><a class="brand" href="index.html"><span class="brand-mark">✦</span> ClassFlow</a><div class="nav-links"><a class="active" href="student.html">Student</a><a href="feedback.html">Feedback</a><a href="teacher-login.html">Teacher</a></div></nav>
+<main class="container dashboard">
+  <section class="page-heading"><div><div class="eyebrow">STUDENT SPACE</div><h1>Schedule your class.</h1><p>Book at least 5 hours ahead. Your teacher calendar updates automatically.</p></div><div class="date-chip" id="todayChip"></div></section>
+
+  <div id="studentMessage" class="notice hidden"></div>
+
+  <section class="dashboard-grid">
+    <div class="panel booking-panel">
+      <div class="panel-head"><div><span class="section-kicker">NEW BOOKING</span><h2>Reserve a time</h2></div><span class="live-dot">LIVE RULE</span></div>
+      <form id="bookingForm">
+        <div class="form-grid">
+          <label>Student name<input id="studentName" required maxlength="80" placeholder="Your full name"></label>
+          <label>Email (optional)<input id="studentEmail" type="email" maxlength="120" placeholder="you@example.com"></label>
+        </div>
+        <div class="form-grid">
+          <label>Date<input id="classDate" type="date" required></label>
+          <label>Time<input id="classTime" type="time" required></label>
+        </div>
+        <label>Subject / class<input id="subject" required maxlength="100" placeholder="e.g. Mathematics"></label>
+        <label>Notes (optional)<textarea id="notes" rows="3" maxlength="300" placeholder="Anything the teacher should know?"></textarea></label>
+        <div class="rule-box"><span>⏱</span><div><strong>5-hour notice</strong><small>You can only schedule a class 5 hours or more from now.</small></div></div>
+        <button class="btn btn-primary btn-full" type="submit" id="bookBtn">Confirm class <span>→</span></button>
+      </form>
+    </div>
+
+    <aside class="panel upcoming-panel">
+      <div class="panel-head"><div><span class="section-kicker">UPCOMING</span><h2>Your classes</h2></div><button class="icon-btn" id="refreshBtn" title="Refresh">↻</button></div>
+      <div id="upcomingList" class="class-list"><div class="empty">Enter your name above and your bookings will appear here.</div></div>
+    </aside>
+  </section>
+</main>
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/student.js"></script>
+</body></html>

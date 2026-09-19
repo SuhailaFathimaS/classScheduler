@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Teacher Calendar — ClassFlow</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/calendar.css"></head>
+<body>
+<nav class="nav container"><a class="brand" href="index.html"><span class="brand-mark">✦</span> ClassFlow</a><div class="nav-links"><a href="teacher.html">Dashboard</a><a class="active" href="calendar.html">Calendar</a><button class="text-btn" id="logoutBtn">Log out</button></div></nav>
+<main class="container dashboard">
+<section class="page-heading"><div><div class="eyebrow">LIVE SCHEDULE</div><h1>Teacher calendar.</h1><p>Every student booking appears here from Google Sheets.</p></div><div class="calendar-controls"><button class="icon-btn" id="prevMonth">←</button><strong id="monthTitle"></strong><button class="icon-btn" id="nextMonth">→</button></div></section>
+<div id="calendarMessage" class="notice hidden"></div>
+<section class="panel calendar-panel">
+<div class="calendar-week"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div>
+<div id="calendarGrid" class="calendar-grid"></div>
+</section>
+</main>
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/calendar.js"></script>
+</body></html>

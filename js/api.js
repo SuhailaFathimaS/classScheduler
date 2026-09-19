@@ -1,5 +1,5 @@
 function apiConfigured(){
-  return CONFIG.API_URL && !CONFIG.API_URL.includes("https://script.google.com/macros/s/AKfycbxDCF6B3DCuoLKwnSAdQ4K_7Di1GVUb_fGeiOLlYOa5XqWP6hG22bwmHrssoP8ESSbc/exec");
+  return CONFIG.API_URL && !CONFIG.API_URL.includes("PASTE_YOUR");
 }
 
 function jsonp(action, params = {}) {
